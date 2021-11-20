@@ -19,6 +19,8 @@ STM32 SPI版，由IAR在Windows10系统上编译并在STM32F411环境下运行�
 SDK文件夹：
 ROS文件夹：
 - catkin_ws文件夹是ROS和模组通信的例程。ROS版本为Kinetic Kame，环境为 Ubuntu 18.04，64位操作系统 
- ROS例程使用方法： 1. 打开新终端进入catkin_ws；创建工作空间，将imu_publish中的源码放入对应工作空间中；详细步骤参考ReadMe.txt运行命令catkin_make编译产生可执行文件“Atom”；编译结束后运行roscore。
+- 
+ ROS例程使用方法： 
+1. 打开新终端进入catkin_ws；创建工作空间，将imu_publish中的源码放入对应工作空间中；详细步骤参考ReadMe.txt运行命令catkin_make编译产生可执行文件“Atom”；编译结束后运行roscore。
 2. 打开新终端进入catkin_ws；执行命令source devel/setup.bash给串口添加权限sudo chmod 666 /dev/ttyUSB0 (代码写的是ttyUSB0,如果需要更改，可在代码中更改)；执行命令 rosrun Atom_publish Atom(Atom_publish 是package的名字，Atom是可执行文件名)。
 3. 打开新终端进入catkin_ws；执行命令source devel/setup.bash；执行命令rostopic echo /Atom_data 可以看见发布在topic的Atom_data。
