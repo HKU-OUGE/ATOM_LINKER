@@ -1,0 +1,20 @@
+{
+    "ATOM": [
+        {
+            "productID": "C3G",
+            "FW": "CxF.00.05.760"
+        }
+    ],
+    "COM_NAME": "/dev/ttyUSB0",
+    "BAUDRATE": 115200,
+    "LINEAR_ACC": true,
+    "ANGULAR_VELOCITY": true,
+    "ORIENTATION": true,
+	"EULER": true,
+    "ACC_RAW": false,
+    "ACC_CAL": false,
+    "ACC_KAL": false,
+    "GYRO_RAW": false,
+    "GYRO_CAL": false,
+    "GYRO_KAL": false
+}
